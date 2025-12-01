@@ -158,8 +158,8 @@ app.get('/api/health', (req, res) => {
 });
 
 // Start server
-app.listen(PORT, () => {
-  console.log(`🎄 Yuletide Backend running on http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`🎄 Yuletide Backend running on port ${PORT}`);
   console.log(`📊 Database: ${path.join(__dirname, 'yuletide.db')}`);
   console.log(`🚀 API endpoints:`);
   console.log(`   GET    /api/gifts       - Get all gifts`);
