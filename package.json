@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "validate": "bash scripts/validate-dependencies.sh",
+    "predeploy": "bash scripts/validate-dependencies.sh"
   },
   "keywords": ["yuletide", "gifts", "api"],
   "author": "",
